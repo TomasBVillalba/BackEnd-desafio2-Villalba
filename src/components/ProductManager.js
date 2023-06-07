@@ -1,6 +1,6 @@
 import {promises as fs} from "fs"
 
-class ProductManager {
+export default class ProductManager {
     constructor(){
         this.patch = "./productos.txt";
         this.products = [];
@@ -69,33 +69,37 @@ class ProductManager {
 
 }
 
-const productos = new ProductManager();
+// const productos = new ProductManager();
 
-productos.addProduct("title1", "description1", 2000, "thumbnail1", "abc123", 5)
-productos.addProduct("title2", "description2", 5000, "thumbnail2", "abc124", 10)
-productos.addProduct("title3", "description3", 8000, "thumbnail3", "abc125", 25)
+// productos.addProduct("title1", "description1", 2000, "thumbnail1", "abc123", 5)
+// productos.addProduct("title2", "description2", 5000, "thumbnail2", "abc124", 10)
+// productos.addProduct("title3", "description3", 8000, "thumbnail3", "abc125", 15)
+// productos.addProduct("title4", "description4", 4300, "thumbnail4", "abc126", 20)
+// productos.addProduct("title5", "description5", 2600, "thumbnail5", "abc127", 25)
+// productos.addProduct("title6", "description6", 7500, "thumbnail6", "abc128", 30)
+// productos.addProduct("title7", "description7", 1645, "thumbnail7", "abc129", 35)
 
 
 // obtener todos los productos
-productos.getProducts()
+// productos.getProducts()
 
 
 // producto no encontrado
-productos.getProductsById(4)
+// productos.getProductsById(4)
 
 
 // producto eliminado
-productos.deleteProductsById(2)
+// productos.deleteProductsById(2)
 
 
 // actualizar productos
-productos.updateProducts({
-    id: 3,
-    title: "title3",
-    description: 'description3',
-    price: 3200,
-    thumbnail: 'thumbnail3',
-    code: 'abc125',
-    stock: 25
-}
-)
+// productos.updateProducts({
+//     id: 3,
+//     title: "title3",
+//     description: 'description3',
+//     price: 3200,
+//     thumbnail: 'thumbnail3',
+//     code: 'abc125',
+//     stock: 25
+// }
+// )
